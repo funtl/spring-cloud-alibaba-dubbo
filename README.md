@@ -8,6 +8,8 @@ Spring Cloud Alibaba Dubbo 项目的目标是将 Dubbo 融入到 Spring Cloud Al
 
 既然已经将 Dubbo 集成进了 Spring Cloud Alibaba，那么理所当然的我们的注册中心也不再采用 Zookeeper 方案而是转为 Nacos 方案了，部署 Nacos 请参考我的 [**服务注册与发现**](http://www.funtl.com/zh/spring-cloud-alibaba/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0.html) 章节
 
+**注：截止到博客发表时间 2019 年 03 月 13 日，Nacos 已发行版为 0.9.0，在 0.8.0 时登录 Nacos 需要使用账号密码，默认账号密码为 nacos/nacos**
+
 ## 实现基于 Feign 的注册方案
 
 由于 Nacos、Dubbo、Spring Cloud Alibaba 都是阿里系产品，所以我们可以很容的将 Dubbo 和 Http 服务注册到 Nacos 中。
