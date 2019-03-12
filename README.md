@@ -1,4 +1,4 @@
-# Spring Cloud Alibaab Dubbo
+# Spring Cloud Alibaba Dubbo
 
 ## 目标
 
