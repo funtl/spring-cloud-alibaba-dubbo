@@ -25,12 +25,22 @@
             <artifactId>dubbo</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-registry-nacos</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>dubbo-registry-nacos</artifactId>
+            <artifactId>dubbo-serialization-kryo</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
 
         <!-- Alibaba -->

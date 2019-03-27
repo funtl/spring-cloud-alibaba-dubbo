@@ -18,6 +18,7 @@
         <dubbo.version>2.6.6</dubbo.version>
         <dubbo-spring-boot.version>0.2.1.RELEASE</dubbo-spring-boot.version>
         <dubbo-registry-nacos.version>0.0.1</dubbo-registry-nacos.version>
+        <dubbo-serialization-kryo.version>2.6.6</dubbo-serialization-kryo.version>
         <alibaba-spring-context-support.version>1.0.2</alibaba-spring-context-support.version>
     </properties>
 
@@ -50,11 +51,6 @@
 
             <!-- Dubbo  -->
             <dependency>
-                <groupId>com.alibaba.boot</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo-spring-boot.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
@@ -63,6 +59,16 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo-registry-nacos</artifactId>
                 <version>${dubbo-registry-nacos.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo-serialization-kryo</artifactId>
+                <version>${dubbo-serialization-kryo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo-spring-boot.version}</version>
             </dependency>
 
             <!-- Alibaba -->
@@ -81,9 +87,6 @@
                 <plugins>
                     <plugin>
                         <artifactId>maven-compiler-plugin</artifactId>
-                        <configuration>
-                            <parameters>true</parameters>
-                        </configuration>
                     </plugin>
 
                     <!-- Source -->
